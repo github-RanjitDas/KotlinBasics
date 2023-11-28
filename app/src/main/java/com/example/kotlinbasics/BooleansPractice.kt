@@ -6,4 +6,6 @@ fun main(){
     println(myTrue || myFalse) // True
     println(myTrue && myFalse) //False
     println(!myTrue) //False
+
+    //next string video
 }
