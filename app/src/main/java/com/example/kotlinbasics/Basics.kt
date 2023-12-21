@@ -2,13 +2,29 @@ package com.example.kotlinbasics
 
 
 fun main(){
-    makeCoffee(1, "Sukuta") //Calling the function
-    makeCoffee(2, "Ranjit") //Calling the function
-    makeCoffee(29, "Haria") //Calling the function
+    println("What is the first number")
+    val num1 = readln().toInt()
+    println("What is the Second number")
+    val num2 = readln().toInt()
+    ////////////////////////////////
+    val showResult= numAdd(num1, num2)
+    println("The result is $showResult")
 
 }
 
-// Define function
+// Define numberAdd function
+fun numAdd (a : Int,b : Int) : Int{
+    var result= a+b
+    return result
+}
+
+
+
+
+
+
+
+// Define makeCoffee function
 fun makeCoffee(sugarCount : Int, name : String) =
     when(sugarCount){
         0 -> {
