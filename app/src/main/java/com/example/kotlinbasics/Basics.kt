@@ -3,21 +3,27 @@ package com.example.kotlinbasics
 
 fun main(){
     println("What is the first number")
-    val num1 = readln().toInt()
+    val num1 = readln().toDouble()
     println("What is the Second number")
-    val num2 = readln().toInt()
+    val num2 = readln().toDouble()
     ////////////////////////////////
-    val showResult= numAdd(num1, num2)
+
+
+    val showResult= numDivide(num1, num2)
     println("The result is $showResult")
+
 
 }
 
 // Define numberAdd function
-fun numAdd (a : Int,b : Int) : Int{
-    var result= a+b
-    return result
+fun numAdd(a: Int, b: Int): Int {
+    return a + b
 }
 
+// Define numberDivide function
+fun numDivide(a: Double, b: Double): Double {
+    return a / b
+}
 
 
 
